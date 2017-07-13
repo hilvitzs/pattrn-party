@@ -1,0 +1,65 @@
+body {
+  height: 100%;
+  font-family: 'Open Sans', serif;
+  background-color: #F2F2F2;
+}
+
+header {
+  background-color: #2F2235;
+  color: #F2F2F2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 25px;
+  margin-left: 50px;
+}
+
+span {
+  font-weight: 300;
+  color: #34D1D1;
+}
+
+.student {
+  font-weight: 600;
+  font-size: 15px;
+  margin-right: 50px;
+}
+
+.accordion-tabs {
+  margin: 50px 50px;
+}
+
+.accordion-section {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+
+button.accordion {
+    background-color: #D1D2D3;
+    font-size: 20px;
+    font-weight: 300;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+}
