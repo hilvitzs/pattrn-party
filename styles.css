@@ -30,36 +30,94 @@ span {
   margin-right: 50px;
 }
 
-.accordion-tabs {
-  margin: 50px 50px;
-}
-
 .accordion-section {
+  width: 90%;
+  margin: 50px auto;
   display: flex;
-  width: 80%;
-  margin: auto;
+  flex-direction: column;
+  top: 25px;
 }
 
-button.accordion {
-    background-color: #D1D2D3;
-    font-size: 20px;
-    font-weight: 300;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: center;
-    border: none;
-    outline: none;
-    transition: 0.4s;
+.img-placeholder {
+  height: 300px;
+  width: 300px;
 }
 
-button.accordion.active, button.accordion:hover {
-    background-color: #ddd;
+ul.tabs {
+  display: flex;
+	height: 32px;
+	border-bottom: 1px solid #333;
+	width: 100%;
 }
 
-div.panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
+ul.tabs li {
+	float: left;
+	cursor: pointer;
+  text-align: center;
+	height: 32px;
+	line-height: 31px;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #666666;
+  background-color: #D1D2D3;
+	color: #666666;
+	overflow: hidden;
+	position: relative;
+  width: 25%;
+
+}
+
+.tab_last { border-right: 1px solid #fff; }
+
+
+ul.tabs li.active {
+	background-color: #fff;
+  font-weight: 600;
+	color: #333;
+  border-top: 1px solid #666666;
+  border-left: 1px solid #666666;
+  border-right: 1px solid #666666;
+  border-bottom: 0;
+	display: block;
+}
+
+.tab_container {
+	border: 1px solid #333;
+	border-top: none;
+	clear: both;
+	float: left;
+	width: 100%;
+	background: #fff;
+	overflow: auto;
+}
+
+.tab_content {
+	padding: 20px;
+	display: none;
+}
+
+.tab_drawer_heading { display: none; }
+
+@media screen and (max-width: 480px) {
+	.tabs {
+		display: none;
+	}
+	.tab_drawer_heading {
+		background-color: #ccc;
+		color: #fff;
+		border-top: 1px solid #333;
+		margin: 0;
+		padding: 5px 20px;
+		display: block;
+		cursor: pointer;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	.d_active {
+		background-color: #666;
+		color: #fff;
+	}
 }
