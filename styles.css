@@ -41,6 +41,8 @@ span {
 .img-placeholder {
   height: 300px;
   width: 300px;
+  float: left;
+  padding: 20px 0;
 }
 
 ul.tabs {
@@ -63,14 +65,27 @@ ul.tabs li {
 	overflow: hidden;
 	position: relative;
   width: 25%;
+}
 
+.content-title {
+  font-weight: 600;
+  float: right;
+  width: 55%;
+  border-bottom: 1px solid #D1D2D3;
+  padding: 20px 0;
+}
+
+.content-body {
+  float: right;
+  width: 55%;
+  padding: 10px 0;
 }
 
 .tab_last { border-right: 1px solid #fff; }
 
 
 ul.tabs li.active {
-	background-color: #fff;
+	background-color: #F2F2F2;
   font-weight: 600;
 	color: #333;
   border-top: 1px solid #666666;
@@ -84,18 +99,77 @@ ul.tabs li.active {
 	border: 1px solid #333;
 	border-top: none;
 	clear: both;
-	float: left;
 	width: 100%;
-	background: #fff;
-	overflow: auto;
+	background: #F2F2F2;
 }
 
 .tab_content {
 	padding: 20px;
 	display: none;
+  vertical-align: middle;
 }
 
 .tab_drawer_heading { display: none; }
+
+.viewcode-section {
+  text-align: center;
+}
+
+.viewcode {
+  background-color: #3F3244;
+  font-family: 'Open Sans', serif;
+  font-weight: 300;
+  border: none;
+  height: 40px;
+  width: 300px;
+  color: white;
+  margin-bottom: 50px;
+}
+
+
+.section-title {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.flexible-cards-title {
+  width: 90%;
+  font-weight: 300;
+  margin-left: 50px;
+}
+
+.flexible-cards-section {
+  margin: 50px auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  top: 25px;
+}
+
+
+.flexible-div {
+  border: 1px solid black;
+  margin: 10px;
+  width: 30%;
+}
+
+.flexible-title {
+  border: 1px solid black;
+}
+
+.flexible-image {
+  height: 100px;
+  width: 100%;
+}
+
+.flexible-one, .flexible-seven {
+  flex: 2 2 62%;
+}
+
+
+.flexible-two, .flexible-three, .flexible-four, .flexible-five, .flexible-six {
+  flex: 1 1 30%;
+}
 
 @media screen and (max-width: 480px) {
 	.tabs {
