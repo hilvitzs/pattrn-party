@@ -52,7 +52,7 @@ ul.tabs {
 	width: 100%;
 }
 
-ul.tabs li {
+li {
 	float: left;
 	cursor: pointer;
   text-align: center;
