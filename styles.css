@@ -212,15 +212,37 @@ div.active {
   font-weight: 300;
 }
 
+.vertical-header {
+  display: none;
+}
+
 @media screen and (max-width: 420px) {
   ul {
-    display: flex;
-    flex-direction: column;
+    display: none;
   }
 
-  li {
+  .vertical-header {
+    cursor: default;
+    display: flex;
+    align-items: center;
+    background-color: #F2F2F2;
     width: 100%;
-    margin: 0;
+    height: 50px;
+    color: #666666;
+    font-weight: 300;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+  }
+
+  .vertical-header.active {
+    font-weight: 600;
+    border: 1px solid #D1D2D3;
+    border-bottom: 0;
+    background-color: #fff;
+  }
+
+  div.active {
+    display: block;
   }
 
   .img-placeholder {
