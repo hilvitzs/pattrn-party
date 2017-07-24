@@ -222,6 +222,7 @@ div.active {
   }
 
   .vertical-header {
+    text-indent: 25px;
     cursor: default;
     display: flex;
     align-items: center;
