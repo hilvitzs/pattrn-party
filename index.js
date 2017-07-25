@@ -21,10 +21,18 @@ verticalHeader.on('click', function() {
   verticalHeader.removeClass('active');
 
   $(this).addClass('active');
-  
-  tabContent.removeClass('active')
+
+  tabContent.removeClass('active');
 
   var activeTab = $(this).attr("rel");
 
   $("#"+activeTab).addClass('active');
+});
+
+var navbar = $('.navbar');
+
+navbar.on('click', function() {
+  $('.navigation-links-section').toggleClass('hidden');
+
+  $('.search-bar-section').toggleClass('hidden');
 })
