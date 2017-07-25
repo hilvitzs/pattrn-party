@@ -179,10 +179,14 @@ div.active {
   border: 1px solid black;
   height: 100px;
   margin-bottom: 100px;
-  background-color: #666666;
+  background-color: #d1d2d3;
 }
 
-.search-bar {
+.nav-links-section {
+  display: flex;
+}
+
+.nav-search-section {
   display: flex;
   align-items: center;
 }
@@ -190,17 +194,17 @@ div.active {
 .search-icon {
   height: 25px;
   width: 20px;
-  position: relative;
-  left: 35px;
+  position: absolute;
+  right: 250px;
 }
 
 .search-input {
   height: 40px;
-  border: 1px solid #D1D2D3;
+  border: 1px solid #f2f2f2;
   text-indent: 40px;
   font-size: 20px;
   font-weight: 100;
-  background-color: #D1D2D3;
+  background-color: #f2f2f2;
 }
 
 .user-icon {
@@ -208,15 +212,20 @@ div.active {
   width: 50px;
 }
 
-.navigation-links {
+.nav-links {
   font-weight: 300;
+  padding: 0 40px;
 }
 
 .vertical-header {
   display: none;
 }
 
-@media screen and (max-width: 420px) {
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
   ul {
     display: none;
   }
@@ -272,5 +281,51 @@ div.active {
 
   .flexible-two, .flexible-three, .flexible-four, .flexible-five, .flexible-six {
     flex: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 20px 0;
+  }
+
+  .menu {
+    display: inline;
+    font-weight: 300;
+    font-size: 20px;
+  }
+
+  .nav-links-section {
+    flex-direction: column;
+    background-color: #f2f2f2;
+    width: 100%;
+  }
+
+  .nav-links {
+    width: 70%;
+    padding: 20px 0;
+    margin: auto;
+  }
+
+  .nav-search-section {
+    background-color: #f2f2f2;
+    width: 100%;
+  }
+
+  .search-icon {
+    left: 60px;
+  }
+
+  .search-input {
+    width: 90%;
+    margin: 20px;
+    border: 1px solid black;
   }
 }
