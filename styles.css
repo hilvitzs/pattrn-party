@@ -1,42 +1,44 @@
 body {
   height: 100%;
-  font-family: 'Open Sans', serif;
   background-color: #fff;
+  font-family: 'Open Sans', serif;
 }
 
 header {
-  background-color: #2F2235;
-  color: #F2F2F2;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #2F2235;
+  color: #F2F2F2;
   height: 50px;
 }
 
 h1 {
   font-weight: 300;
   font-size: 25px;
-  Margin-left: 50px;
+  margin-left: 50px;
 }
 
 span {
-  font-weight: 300;
   color: #34D1D1;
+  font-weight: 300;
 }
 
 .student {
-  font-weight: 600;
   font-size: 15px;
+  font-weight: 600;
   margin-right: 50px;
 }
 
+/* Accordion Tabs Section */
+
 .accordion-section {
-  width: 90%;
-  margin: 50px auto;
-  margin-bottom: 0;
   display: flex;
   flex-direction: column;
   top: 25px;
+  width: 90%;
+  margin: 50px auto;
+  margin-bottom: 0;
 }
 
 ul {
@@ -50,22 +52,22 @@ li {
   justify-content: center;
   align-items: center;
   background-color: #F2F2F2;
-  width: 25%;
-  height: 50px;
-  color: #666666;
-  font-weight: 300;
   border-left: 1px solid #fff;
   border-right: 1px solid #fff;
+  color: #666666;
+  height: 50px;
+  width: 25%;
+  font-weight: 300;
 }
 
 li.active {
-  font-weight: 600;
+  background-color: #fff;
   border: 1px solid #D1D2D3;
   border-bottom: 0;
-  background-color: #fff;
+  font-weight: 600;
 }
 
-div.active {
+.tab-content.active {
   display: block;
 }
 
@@ -93,13 +95,13 @@ div.active {
 }
 
 .content-title {
-  font-size: 25px;
-  width: 90%;
   margin: auto;
-  font-weight: 600;
-  border-bottom: 1px solid #D1D2D3;
-  padding-top: 28px;
   padding-bottom: 20px;
+  padding-top: 28px;
+  border-bottom: 1px solid #D1D2D3;
+  width: 90%;
+  font-size: 25px;
+  font-weight: 600;
 }
 
 .content-body {
@@ -114,18 +116,21 @@ div.active {
   text-align: center;
 }
 
+/* View Code Button */
+
 .viewcode {
   background-color: #3F3244;
-  font-family: 'Open Sans', serif;
-  font-weight: 300;
+  color: #fff;
   border: none;
-  height: 40px;
-  width: 300px;
-  color: white;
   margin-top: 50px;
   margin-bottom: 50px;
+  font-family: 'Open Sans', serif;
+  font-weight: 300;
+  height: 40px;
+  width: 300px;
 }
 
+/* Section Titles */
 
 .section-title {
   font-weight: 300;
@@ -133,17 +138,19 @@ div.active {
 }
 
 .title-line {
-  width: 90%;
-  margin: auto;
   font-weight: 300;
+  margin: auto;
+  width: 90%;
 }
 
+/* Flexible Cards Section */
+
 .flexible-cards-section {
-  margin: 50px auto;
-  width: 90%;
   display: flex;
   flex-wrap: wrap;
+  margin: 50px auto;
   top: 25px;
+  width: 90%;
 }
 
 
@@ -163,23 +170,25 @@ div.active {
 }
 
 .flexible-one, .flexible-seven {
-  flex: 62%;
+  flex: 63%;
 }
 
 .flexible-two, .flexible-three, .flexible-four, .flexible-five, .flexible-six {
   flex: 30%;
 }
 
+/* Navbar Section */
+
 .navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 90%;
-  margin: 50px auto;
-  border: 1px solid black;
-  height: 100px;
-  margin-bottom: 100px;
   background-color: #d1d2d3;
+  border: 1px solid black;
+  margin: 50px auto;
+  margin-bottom: 100px;
+  height: 100px;
+  width: 90%;
 }
 
 .nav-links-section {
@@ -188,25 +197,24 @@ div.active {
 
 .nav-search-section {
   display: flex;
-  position: relative;
   align-items: center;
+  position: relative;
 }
 
 .search-input {
-  display: relative;
-  height: 40px;
+  background-color: #f2f2f2;
   border: 1px solid #f2f2f2;
-  text-indent: 40px;
   font-size: 20px;
   font-weight: 100;
-  background-color: #f2f2f2;
+  text-indent: 40px;
+  height: 40px;
 }
 
 .search-icon {
-  height: 25px;
-  width: 20px;
   position: absolute;
   left: 10px;
+  height: 25px;
+  width: 20px;
 }
 
 .user-icon {
@@ -239,24 +247,24 @@ div.active {
   }
 
   .vertical-header {
-    text-indent: 25px;
-    cursor: default;
-    display: flex;
     align-items: center;
     background-color: #F2F2F2;
-    width: 100%;
-    height: 50px;
-    color: #666666;
-    font-weight: 300;
     border-left: 1px solid #fff;
     border-right: 1px solid #fff;
+    cursor: default;
+    display: flex;
+    color: #666666;
+    font-weight: 300;
+    text-indent: 25px;
+    height: 50px;
+    width: 100%;
   }
 
   .vertical-header.active {
-    font-weight: 600;
+    background-color: #fff;
     border: 1px solid #D1D2D3;
     border-bottom: 0;
-    background-color: #fff;
+    font-weight: 600;
   }
 
   div.active {
@@ -269,13 +277,13 @@ div.active {
   }
 
   .content-title {
-    width: 85%;
     margin: auto;
+    width: 85%;
   }
 
   .content-body {
-    width: 85%;
     font-size: 18px;
+    width: 85%;
   }
 
   .tab-sections {
@@ -299,8 +307,8 @@ div.active {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
     padding: 20px 0;
+    width: 90%;
   }
 
   .menu {
@@ -317,8 +325,8 @@ div.active {
 
   .nav-links {
     width: 70%;
-    padding: 20px 0;
     margin: auto;
+    padding: 20px 0;
   }
 
   .nav-search-section {
@@ -336,3 +344,4 @@ div.active {
     border: 1px solid black;
   }
 }
+s
