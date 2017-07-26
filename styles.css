@@ -30,6 +30,29 @@ span {
   margin-right: 50px;
 }
 
+/* Section Titles */
+
+.title-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.accordion {
+  margin-top: 35px;
+}
+
+.title-line {
+  font-weight: 300;
+  margin-left: 20px;
+}
+
+.hr {
+  border-bottom: 1px solid #D1D2D3;
+  width: 75%;
+}
+
 /* Accordion Tabs Section */
 
 .accordion-section {
@@ -113,11 +136,12 @@ li.active {
   padding: 20px 0;
 }
 
+
+/* View Code Section */
+
 .viewcode-section {
   text-align: center;
 }
-
-/* View Code Button */
 
 .viewcode {
   background-color: #3F3244;
@@ -129,29 +153,6 @@ li.active {
   font-weight: 300;
   height: 40px;
   width: 300px;
-}
-
-/* Section Titles */
-
-.title-section {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-
-.accordion {
-  margin-top: 35px;
-}
-
-.title-line {
-  font-weight: 300;
-  margin-left: 20px;
-}
-
-.hr {
-  border-bottom: 1px solid #D1D2D3;
-  width: 75%;
 }
 
 /* Flexible Cards Section */
