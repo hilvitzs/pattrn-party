@@ -284,6 +284,7 @@ li.active {
   }
 
   .img-placeholder {
+    margin: auto;
     height: 250px;
     width: 85%;
   }
