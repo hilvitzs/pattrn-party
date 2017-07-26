@@ -1,8 +1,6 @@
 var tabs = $('li');
 var tabContent = $('.tab-content');
 
-console.log(tabContent);
-
 tabs.on('click', function() {
   tabs.removeClass('active');
 

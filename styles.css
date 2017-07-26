@@ -141,6 +141,10 @@ li.active {
   padding: 20px 0;
 }
 
+.vertical-header {
+  display: none;
+}
+
 /* View Code Section */
 
 .viewcode-section {
@@ -249,10 +253,6 @@ li.active {
   padding: 0 60px;
 }
 
-.vertical-header {
-  display: none;
-}
-
 .menu {
   display: none;
 }
@@ -264,6 +264,8 @@ li.active {
 }
 
 @media screen and (max-width: 800px) {
+
+  /* Section Titles */
   .title-section {
     flex-direction: column;
     justify-content: center;
@@ -277,6 +279,8 @@ li.active {
     width: 10%;
     padding-top: 15px;
   }
+
+  /* Accordion Tabs Section */
 
   ul {
     display: none;
@@ -303,7 +307,7 @@ li.active {
     font-weight: 600;
   }
 
-  div.active {
+  .tab-content.active {
     display: block;
   }
 
@@ -327,6 +331,8 @@ li.active {
     flex-direction: column;
   }
 
+  /* Flexible Cards Section */
+
   .flexible-one, .flexible-seven {
     flex: 100%;
   }
@@ -334,6 +340,8 @@ li.active {
   .flexible-two, .flexible-three, .flexible-four, .flexible-five, .flexible-six {
     flex: 100%;
   }
+
+  /* Header Section */
 
   .navbar {
     flex-direction: column;
