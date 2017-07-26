@@ -141,7 +141,6 @@ li.active {
   padding: 20px 0;
 }
 
-
 /* View Code Section */
 
 .viewcode-section {
@@ -170,19 +169,23 @@ li.active {
   width: 90%;
 }
 
-
 .flexible-div {
-  border: 1px solid black;
+  text-align: left;
+  border: 1px solid #D1D2D3;
   margin: 10px;
   width: 30%;
+  height: 218px;
 }
 
 .flexible-title {
-  border: 1px solid black;
+  font-weight: 700;
+  padding: 20px;
+  height: 25px;
+  border: 1px solid #D1D2D3;
 }
 
 .flexible-image {
-  height: 100px;
+  height: 150px;
   width: 100%;
 }
 
@@ -225,6 +228,7 @@ li.active {
   font-weight: 100;
   text-indent: 40px;
   height: 40px;
+  width: 210px;
 }
 
 .search-icon {
