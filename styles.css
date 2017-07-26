@@ -137,7 +137,6 @@ li.active {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /*width: 90%;*/
 }
 
 
@@ -196,7 +195,7 @@ li.active {
   justify-content: space-around;
   align-items: center;
   background-color: #D1D2D3;
-  border: 1px solid black;
+  border: 1px solid #000000;
   margin: 50px auto;
   margin-bottom: 100px;
   height: 100px;
@@ -215,7 +214,7 @@ li.active {
 
 .search-input {
   background-color: #F2F2F2;
-  border: 1px solid #F2F2F2;
+  border: 1px solid #666666;
   font-size: 20px;
   font-weight: 100;
   text-indent: 40px;
@@ -354,6 +353,6 @@ li.active {
   .search-input {
     width: 90%;
     margin: 20px;
-    border: 1px solid black;
+    border: 1px solid #666666;
   }
 }
