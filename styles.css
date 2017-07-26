@@ -264,6 +264,20 @@ li.active {
 }
 
 @media screen and (max-width: 800px) {
+  .title-section {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .title-line {
+    margin-left: 0;
+  }
+
+  .hr {
+    width: 10%;
+    padding-top: 15px;
+  }
+
   ul {
     display: none;
   }
