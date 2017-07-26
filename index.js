@@ -32,7 +32,7 @@ verticalHeader.on('click', function() {
 var navbar = $('.navbar');
 
 navbar.on('click', function() {
-  $('.navigation-links-section').toggleClass('hidden');
+  $('.nav-links-section').toggleClass('hidden');
 
-  $('.search-bar-section').toggleClass('hidden');
+  $('.nav-search-section').toggleClass('hidden');
 })
