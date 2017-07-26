@@ -54,6 +54,7 @@ li {
   background-color: #F2F2F2;
   border-left: 1px solid #fff;
   border-right: 1px solid #fff;
+  border-bottom: 1px solid #D1D2D3;
   color: #666666;
   height: 50px;
   width: 25%;
@@ -132,15 +133,26 @@ li.active {
 
 /* Section Titles */
 
-.section-title {
-  font-weight: 300;
-  margin-bottom: 20px;
+.title-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /*width: 90%;*/
+}
+
+
+.accordion {
+  margin-top: 25px;
 }
 
 .title-line {
   font-weight: 300;
-  margin: auto;
-  width: 90%;
+  margin: 0 20px;
+}
+
+.hr {
+  border-bottom: 1px solid #D1D2D3;
+  width: 75%;
 }
 
 /* Flexible Cards Section */
@@ -183,7 +195,7 @@ li.active {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #d1d2d3;
+  background-color: #D1D2D3;
   border: 1px solid black;
   margin: 50px auto;
   margin-bottom: 100px;
@@ -202,8 +214,8 @@ li.active {
 }
 
 .search-input {
-  background-color: #f2f2f2;
-  border: 1px solid #f2f2f2;
+  background-color: #F2F2F2;
+  border: 1px solid #F2F2F2;
   font-size: 20px;
   font-weight: 100;
   text-indent: 40px;
@@ -319,7 +331,7 @@ li.active {
 
   .nav-links-section {
     flex-direction: column;
-    background-color: #f2f2f2;
+    background-color: #F2F2F2;
     width: 100%;
   }
 
@@ -330,7 +342,7 @@ li.active {
   }
 
   .nav-search-section {
-    background-color: #f2f2f2;
+    background-color: #F2F2F2;
     width: 100%;
   }
 
