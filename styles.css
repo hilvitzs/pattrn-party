@@ -142,12 +142,12 @@ li.active {
 
 
 .accordion {
-  margin-top: 25px;
+  margin-top: 35px;
 }
 
 .title-line {
   font-weight: 300;
-  margin: 0 20px;
+  margin-left: 20px;
 }
 
 .hr {
